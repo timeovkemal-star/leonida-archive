@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEONIDA ARCHIVE — GTA VI</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090d13;color:#f4f4f4;font-family:Arial,sans-serif}
+header{padding:22px 7%;background:#111923;border-bottom:2px solid #ff4da6}
+.logo{font-size:25px;font-weight:900;letter-spacing:3px;color:#ff62ae}
+nav{margin-top:16px}
+nav a{color:#b9d5dc;text-decoration:none;margin-right:18px;font-size:13px}
+.hero{padding:90px 8%;background:linear-gradient(90deg,#101923ee,#10192366),linear-gradient(135deg,#174c57,#a33b70);min-height:330px}
+.hero h1{font-size:clamp(38px,8vw,75px);margin:10px 0;color:#fff}
+.hero p{max-width:600px;line-height:1.7;color:#e5e5e5}
+.tag{color:#ff83bd;font-weight:bold;letter-spacing:3px}
+.btn{display:inline-block;padding:13px 20px;background:#ff4da6;color:#111;text-decoration:none;font-weight:bold;border-radius:4px;margin-top:12px}
+section{padding:48px 7%}
+h2{color:#69dce0;font-size:26px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#141e29;border:1px solid #293b49;padding:20px;border-radius:8px}
+.card h3{color:#ff83bd}
+.card p{color:#c4d0d8;line-height:1.6}
+.map{background:#13232a;border:1px solid #31505a;border-radius:10px;padding:18px}
+.map svg{width:100%;max-height:430px}
+.place{cursor:pointer;fill:#ff62ae;stroke:white;stroke-width:2}
+.place:hover{fill:#69dce0}
+#info{padding:15px;background:#1b2b36;margin-top:12px;border-radius:6px;color:#fff}
+.news{border-left:3px solid #ff62ae;padding:8px 18px;margin:20px 0;background:#141e29}
+small{color:#91a9b5}
+footer{padding:30px 7%;background:#111923;color:#9aabb5;font-size:12px;line-height:1.7}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">LEONIDA ARCHIVE</div>
+<nav>
+<a href="#accueil">ACCUEIL</a>
+<a href="#univers">GTA VI</a>
+<a href="#carte">CARTE</a>
+<a href="#actus">ACTUALITÉS</a>
+</nav>
+</header>
+
+<div class="hero" id="accueil">
+<div class="tag">DOSSIERS • VICE CITY • LEONIDA</div>
+<h1>WELCOME TO<br>LEONIDA.</h1>
+<p>Ton centre d'archives francophone consacré à Grand Theft Auto VI. Explore Vice City, découvre les lieux et suis les dernières informations sur le jeu.</p>
+<a class="btn" href="#carte">EXPLORER LA CARTE</a>
+</div>
+
+<section id="univers">
+<h2>LES DOSSIERS DE LEONIDA</h2>
+<div class="cards">
+<div class="card"><h3>VICE CITY</h3><p>La grande métropole ensoleillée au cœur de l'univers de GTA VI.</p></div>
+<div class="card"><h3>PERSONNAGES</h3><p>Découvre les personnages connus et les informations officielles.</p></div>
+<div class="card"><h3>EXPLORATION</h3><p>Retrouve les lieux, régions et paysages de Leonida.</p></div>
+</div>
+</section>
+
+<section id="carte">
+<h2>CARTE INTERACTIVE</h2>
+<p>Appuie sur un point pour découvrir un lieu.</p>
+<div class="map">
+<svg viewBox="0 0 600 380" role="img" aria-label="Carte schématique de Leonida">
+<path d="M40 80 Q120 20 220 70 T400 65 Q520 90 560 180 L500 320 Q390 350 300 300 L180 340 Q80 280 40 180Z" fill="#28515a" stroke="#69dce0" stroke-width="3"/>
+<path d="M60 180 Q180 120 260 190 T520 180" fill="none" stroke="#e6c68c" stroke-width="8"/>
+<path d="M150 70 Q220 150 200 280 M350 60 Q310 170 420 300" fill="none" stroke="#e6c68c" stroke-width="5"/>
+<circle class="place" cx="350" cy="170" r="12" onclick="showPlace('Vice City','La grande ville côtière de Leonida.')"/>
+<circle class="place" cx="180" cy="125" r="12" onclick="showPlace('Zones sauvages','Les espaces naturels et marécageux.')"/>
+<circle class="place" cx="440" cy="260" r="12" onclick="showPlace('Sud de Leonida','Une région à explorer.')"/>
+<circle class="place" cx="270" cy="270" r="12" onclick="showPlace('Routes de Leonida','Les routes qui relient les différentes régions.')"/>
+<text x="350" y="145" fill="white" text-anchor="middle" font-size="17">VICE CITY</text>
+<text x="180" y="100" fill="white" text-anchor="middle" font-size="13">NATURE</text>
+</svg>
+<div id="info">Choisis un point sur la carte pour afficher ses informations.</div>
+</div>
+</section>
+
+<section id="actus">
+<h2>ACTUALITÉS GTA VI</h2>
+<div class="news">
+<h3>Les informations officielles</h3>
+<p>Retrouve les annonces et publications directement auprès de Rockstar Games.</p>
+<a class="btn" href="https://www.rockstargames.com/VI" target="_blank">SITE OFFICIEL GTA VI</a>
+</div>
+<div class="news">
+<h3>Rockstar Newswire</h3>
+<p>Les annonces, actualités et communications officielles de Rockstar.</p>
+<a class="btn" href="https://www.rockstargames.com/newswire" target="_blank">LIRE NEWSWIRE</a>
+</div>
+<p><small>Les rumeurs et informations non confirmées devront toujours être clairement identifiées comme telles.</small></p>
+</section>
+
+<footer>
+LEONIDA ARCHIVE — FAN SITE NON OFFICIEL<br>
+Projet de fans consacré à Grand Theft Auto VI. Non affilié à Rockstar Games ou Take-Two Interactive. Toutes les marques appartiennent à leurs propriétaires respectifs.
+</footer>
+
+<script>
+function showPlace(name,description){
+document.getElementById('info').innerHTML='<strong>'+name+'</strong><br>'+description;
+}
+</script>
+</body>
+</html>
